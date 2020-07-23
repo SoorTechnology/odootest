@@ -46,15 +46,15 @@
                             <tr>
                                 <!-- TODO: remove in master -->
                                 <t t-set="colspan" t-value="7"/>
-                                <th name="th_sequence" class="text-left">No  لرقم</th>
-                                <th name="th_description" class="text-left"><span>DESCRIPTION  لبــــيـــــــــــــــــــان</span></th>
+                                <th name="th_sequence" class="text-left">No الرقم</th>
+                                <th name="th_description" class="text-left"><span>DESCRIPTION  البيان</span></th>
                                 <!-- TODO: remove in master -->
-                                <th name="th_uom" class="text-left">UOM/KG  لوحدة كيلو</th>
-                                <th name="th_quantity" class="text-right"><span>QTY  لكمية</span></th>
-                                <th name="th_priceunit" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>UNIT PRICE KD / سعر  لوحدة دينار</span></th>
+                                <th name="th_uom" class="text-left">UOM/KG الوحدة كيلو</th>
+                                <th name="th_quantity" class="text-right"><span>QTY  الكمية</span></th>
+                                <th name="th_priceunit" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>UNIT PRICE KD / سعر الوحدة دينار</span></th>
                                 <th name="th_subtotal" class="text-right">
-                                    <span groups="account.group_show_line_subtotals_tax_excluded">TOTAL PRICE KD / السعر الاجمالي دينار</span>
-                                    <span groups="account.group_show_line_subtotals_tax_included">TOTAL PRICE KD / السعر الاجمالي دينار</span>
+                                    <span groups="account.group_show_line_subtotals_tax_excluded">TOTAL PRICE KD / السعر الاجمالي دينار </span>
+                                    <span groups="account.group_show_line_subtotals_tax_included">TOTAL PRICE KD / السعر الاجمالي دينار </span>
                                 </th>
                             </tr>
                         </thead>
@@ -121,7 +121,7 @@
                                         <strong>TOTAL /  ONLY</strong>
                                     </td>
                                     <td>
-                                        <span>فقط ربعمائة وتسعة وستون دينار و 500/1000 فلس لاغير.</span>
+                                        <span t-esc="o.currency_id.amount_to_text(o.amount_total)"></span>
                                     </td>
                                     <td>
                                         <strong>-:لمجموع</strong>
