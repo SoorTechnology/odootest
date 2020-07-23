@@ -46,14 +46,14 @@
                 <table class="table table-sm o_main_table" style="margin-top: 20px;">
                     <thead>
                         <tr>
-                            <th name="th_sequence" class="text-left">No  لرقم</th>
-                            <th name="th_description" class="text-left">DESCRIPTION  لبــــيـــــــــــــــــــان</th>
-                            <th name="th_uom" class="text-left">UOM/KG  لوحدة كيلو</th>
-                            <th name="th_quantity" class="text-right">QTY  لكمية</th>
-                            <th name="th_priceunit" class="text-right">UNIT PRICE KD / سعر  لوحدة دينار</th>
+                            <th name="th_sequence" class="text-left">No الرقم</th>
+                            <th name="th_description" class="text-left">DESCRIPTION  البيان</th>
+                            <th name="th_uom" class="text-left">UOM/KG الوحدة كيلو</th>
+                            <th name="th_quantity" class="text-right">QTY  الكمية</th>
+                            <th name="th_priceunit" class="text-right">UNIT PRICE KD / سعر الوحدة دينار</th>
                             <th name="th_subtotal" class="text-right">
-                                <t groups="account.group_show_line_subtotals_tax_excluded">TOTAL PRICE KD / السعر الاجمالي دينار</t>
-                                <t groups="account.group_show_line_subtotals_tax_included">TOTAL PRICE KD / السعر الاجمالي دينار</t>
+                                <t groups="account.group_show_line_subtotals_tax_excluded">TOTAL PRICE KD / السعر الاجمالي دينار </t>
+                                <t groups="account.group_show_line_subtotals_tax_included">TOTAL PRICE KD / السعر الاجمالي دينار </t>
                             </th>
                         </tr>
                     </thead>
